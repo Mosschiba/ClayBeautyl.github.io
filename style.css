@@ -1,123 +1,71 @@
-*{
-    box-sizing: border-box !important;
-}
 body{
-    height: 100% !important;
-    width: 100% !important;
-    padding: 0px !important;
-    margin: 0px !important;
-    background-color: #302e2c !important;
-    font-family: Montserrat;
+    padding: 0;
+    margin: 0;
 }
-li{
-    display: inline;
-    margin: 15px;
-}
-.header:hover{
-    background-color: #c2AF9c;
-}
-li:hover{
-    text-decoration: underline;
-}
-.header-btn{
-    display: inline;
-    margin: 15px;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    width: 250px;
-    height: 45px;
-    font-family: Montserrat;
-    font-size: 28px;
-    background-color: #686664;
-    color: beige;
+.header-cn{
+    height: 950px;
+    background-image:linear-gradient(135deg, hsla(30, 4%, 18%, 0.8),hsla(30, 24%, 69%, 0.8)),
+                      url(./pics/header-image.jpeg);
+    background-size: cover;
+    background-position: 60% 60%;
+    background-attachment: fixed;
    
 }
-/* .info{
-    color:#2f2c2b;
-    
-    
-} */
-.card-info{
-    min-width: 200px;
-    height: 240px;
-    background-color: #2f2c2b;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 10px 9px 20px 3px #555453;
-    color: #c2AF9c;
-    text-align: center;
-    line-height: 1.5;
+.header{
+    height: 100px;
+    position: fixed;
+ 
 }
-.header-scroll{
+.nav-link{
+    color: #302e2c !important;
+        
+}
+.nav-link:hover{
+    color:wheat !important;
+    text-decoration-line: underline;
+}
+.nav-item{
+    padding-top: 15px;
+}
+.navbar{
     background-color: #c2AF9c;
-    border-bottom: 1px solid #2f2c2b;
+    opacity: 0.9;
+    border-bottom: #302e2c solid 1px;
 }
-.about-us-img .about-us-text{
-    display: inline !important;
-}
-.slideshow{
-    width: 100%;
-    height: 550px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.carousel-container {
-    width: 70%;
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-    
-  }
-  
-  .carousel-slide {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+.logo{
+    background-color: #c2AF9c;
+    height: 80px;
+    width: 100px;
     position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .carousel-slide img {
+    left: 40px;
+    top: 10px;
+   
+}
+.logo img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 40% 40%;
-
-    }
-    .carousel-slide.active {
-    opacity: 1;
-    }
-  
-    .carousel-prev,
-    .carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 4rem;
-    color: #bbb8b5;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .carousel-prev {
-    left: 0;
-  }
-  
-  .carousel-next {
-    right: 0;
-  }
-  .carousel-prev:hover{
-    background-color: #bbb8b5;
-    color:#2f2c2b;
+}
+.about-us{
+    background-color:#c2AF9c;
+}
+.about-us-img{
+    height: 450px !important;
+   
+}
+.about-us-img img{
     border-radius: 5px;
-  }
-  .carousel-next:hover{
-    background-color: #bbb8b5;
-    color:#2f2c2b;
-    border-radius: 5px;
-  }
+}
+.navbar-collapse{
+    transition: all 0.5s !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.icons{
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute ;
+    top: 0;
+}
